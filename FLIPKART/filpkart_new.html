@@ -1,0 +1,1352 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+<title> Flipkart</title>
+</head>
+<style>
+    .maincontainer{
+      background-color: rgb(234, 227, 227);
+      height:1400px;
+    }
+    nav {
+        background-color:  #3073e0;
+        height:60px;
+        width:2000px;
+        margin-top: -5px;
+        z-index: 1000;
+      }
+      #flipplus{
+        position: fixed;
+
+      }
+      
+      .formnav{
+        margin-top: 60px;
+        margin-bottom: 15px;
+        height: 80px;
+        width: 500px;
+      }
+      #searchtag{
+        height:38px;
+        width:450px;
+        font-size:14px;
+      }
+  
+      #search{
+        margin-left: 415px;
+        margin-top: -35px;
+        position:relative;
+        display: flex;
+        color: #3073e0;
+       cursor:pointer;
+      }
+   .btnlogin{
+      margin-left:-27px;
+      margin-right:30px;
+      background-color:white;
+      color: #3073e0;
+      border-style: none;
+      padding:2px 35px;
+      font-size:large;
+  }
+      .flipkart{
+        color:white;
+        font-size: 20px;
+        margin-left: 130px;
+        margin-right:8px;
+        margin-bottom:22px;
+        margin-top:5px;
+        padding-left: 40px;
+        position: relative;
+        display: flex;
+        cursor:pointer;
+      }
+      .flipkart:hover{
+        text-decoration: none;
+        color: white;
+      }
+      .Explore{
+        color:white;
+        font-size:12px;
+        margin-top: 15px;
+        margin-left: -80px;
+        position: relative;
+        display: flex;
+        cursor:pointer;
+      }
+      .Explore:hover{
+        text-decoration: underline;
+        color: white;
+      }
+      #plus{
+        color:rgb(240, 243, 76);
+        font-size:12px;
+        margin-top: 100px;
+        margin-left:2px;
+       
+      }
+      .plus:hover{
+        text-decoration: underline;
+        color:rgb(240, 243, 76);
+      }
+      #pluslogo{
+        color:rgb(240, 243, 76);
+        font-size:12px;
+        margin-top:15px;
+        margin-left:-14px;
+        margin-right:10px;
+      }
+      #seller{
+        font-family:Arial, Helvetica, sans-serif;
+        color:white;
+        font-size: 15px;
+        margin-right:27px;
+        padding-bottom: 50px;
+        /* padding-top:-5px; */
+        cursor:pointer;
+      }
+      #more{
+        font-family:Arial, Helvetica, sans-serif;
+        color:white;
+        font-size: 15px;
+        margin-right:30px;
+        cursor:pointer;
+        padding-top: -25px;
+      }
+     
+      #moreinfo{
+      color: rgb(27, 136, 238);
+      font-size: 15px;
+      text-size-adjust: 7px;
+      /* margin-bottom: 15px; */
+
+     }
+
+      #cart{
+        font-family:Arial, Helvetica, sans-serif;
+        color:white;
+        font-size: 15px;
+        margin-left:-2px;
+        /* margin-bottom:10px; */
+        padding-top: -15px;
+        cursor:pointer;
+      }
+      .topimgcontainer{
+     cursor:pointer;
+     display: flex !important;
+     margin-right: 10px;
+     margin-left: -10px;
+    padding-top: 60px;
+    width:1360px;
+    background-color: white;
+ 
+    /* padding-left: 20px; */
+   }
+
+   .imgdiv{
+     margin-left: 40px;
+     margin-top:5px;
+     /* margin-right: 20px; */
+     width: 30%;
+   } 
+   .imgdiv4{
+     margin-top:-5px;
+     margin-left:20px;
+     margin-right:30px;
+   } 
+   .imgdiv5{
+     margin-top: 14px;
+     margin-left: 40px;
+   } 
+   .imgdiv6{
+     margin-top:px;
+     margin-left: 40px;
+   } 
+   .imgdiv7{
+     margin-top:-3px;
+     margin-left: 40px;
+   } 
+   .imgdiv8{
+     margin-top:6px;
+     margin-left: 50px;
+   } 
+   .imgdiv9{
+     margin-top:4px;
+     margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+   } 
+
+   .imgdiv:hover{
+    color: rgb(27, 136, 238);
+   } 
+   .imgdiv4:hover,.imgdiv5:hover,.imgdiv6:hover,.imgdiv7:hover,.imgdiv8:hover,.imgdiv9:hover{
+    color: rgb(27, 136, 238);
+   } 
+   .imgtext{
+   font-size: 15px;
+   }
+
+#fashion{
+  /* margin-right: 40px; */
+  margin-left: 20px;
+}
+ #home{
+  padding-left:30px;
+}
+ #beauty{
+  margin-left:-25px;
+}
+.slidimg{
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+width: 100% !important;
+height:140% !important;
+}
+#prebtn{
+  margin-top: 5px;
+  margin-right: 150px;
+   /* position: absolute; */
+   border-style: none;
+   z-index: 1;
+   background-color: rgb(31, 29, 29);
+   width: 45px;
+   height: 100px; 
+   border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nextbtn{
+  margin-top: 5px;
+   margin-right: -150px;
+   /* position: absolute; */
+   border-style: none;
+   z-index: 1;
+   background-color: rgb(31, 29, 29);
+   width: 45px;
+   height: 100px; 
+   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#nextbtn1{
+  margin-top: 5px;
+   margin-right: -170px;
+   /* position: absolute; */
+   border-style: none;
+   z-index: 1;
+   background-color: rgb(31, 29, 29);
+   width: 45px;
+   height: 100px; 
+   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+.bestelectronic{
+    margin-top: 10px;
+    background-color:white;
+    width:1010px;
+    height:105px;
+}
+.eleheading{
+   margin-left: 25px;
+   padding-top: 15px;
+}
+.elesubheading{
+   color: rgb(184, 179, 179);
+   margin-left: 25px;
+}
+.slidcontainer{
+    background-color:white;
+    width:1010px;
+    height:305px;
+    margin-top:3px;
+    padding-top:20px;
+       
+}
+.imgcontainer {
+      display: flex;
+   
+}
+
+ .cardimg img{
+      width: 90%;
+      padding-left: 40px;
+      padding-top: 20px;
+}
+ .card:hover{
+  transform:scale(1.1);
+}
+
+.images{
+    border-radius:none !important;
+    min-width:none !important;
+    object-fit: cover;
+ }
+ .green1{
+    color: rgb(86, 145, 86);
+    padding-left:50px;
+ }
+ .gray1{
+    color: gray;
+    padding-left:28px;
+ }
+ .img2{
+  padding-left:35px;
+  padding-top:10px;
+ }
+ .green2{
+    color: rgb(86, 145, 86);
+    padding-left:45px;
+ }
+ .gray2{
+    color: gray;
+    padding-left:8px;
+    position: absolute;
+ }
+ .img3{
+  padding-left:65px;
+  padding-top:35px;
+ }
+ .green3{
+    color: rgb(86, 145, 86);
+    padding-left:45px;
+ }
+ .gray3{
+    color: gray;
+    padding-left:70px;
+    position: absolute;
+ }
+ .img4{
+  padding-left:65px;
+  padding-top:-30px;
+ }
+ .green4{
+    color: rgb(86, 145, 86);
+    padding-left:55px;
+ }
+ .gray4{
+    color: gray;
+    padding-left:60px;
+    position: absolute;
+ }
+ .img5{
+  padding-left:60px;
+  padding-top:-15px;
+  position: absolute;
+ }
+ .green5{
+    color: rgb(86, 145, 86);
+    padding-left:45px;
+    padding-top:25px;
+ }
+ .gray5{
+    color: gray;
+    padding-left:50px;
+    position: absolute;
+ }
+ .img6{
+  padding-left:20px;
+  padding-top:1px;
+ }
+ .green6{
+    color: rgb(86, 145, 86);
+    padding-left:45px;
+ }
+ .gray6{
+    color: gray;
+    padding-left:10px;
+    position: absolute;
+ }
+ 
+.btn{
+  background-color:#3073e0;
+  color: white;
+  height: 50px;
+  width:120px;
+  margin-left: 850px;
+  /* margin-bottom: 50px; */
+  margin-top:-65px;
+  position: absolute;
+  /* border-radius: 0%; */
+}
+
+ 
+#cardlbtn{
+    margin-top: -35px;
+   margin-left: -72px;
+   position: absolute;
+   border-style: none;
+   z-index: 1;
+   background-color: rgb(132, 128, 128);
+   width: 45px;
+   height: 100px; 
+   border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#cardrbtn{
+    margin-top: -35px;
+   margin-left: 31px;
+   position: absolute;
+   z-index: 1;
+   background-color: rgb(132, 128, 128);
+   width: 45px;
+   height: 100px; 
+   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* .electronicitem{
+    margin-top: 3px;
+    background-color:white;
+    width:1010px;
+    height:305px;
+} */
+.furniture{
+    position: absolute;
+    margin-top:-410px;
+    margin-left:1025px;
+    background-color: white;
+}
+.furnitureimg{
+    width:300px;
+    height:410px;
+    padding:5px;
+}
+
+.toyitem{
+    margin-top: 60px;
+    background-color:white;
+    width:1330px;
+    height:105px;
+}
+.toyheading{
+   margin-left: 25px;
+   padding-top: 15px;
+}
+.toysubheading{
+   color: rgb(184, 179, 179);
+   margin-left: 25px;
+}
+.toybtn{
+  background-color:#3073e0;
+  color: white;
+  height: 50px;
+  width:120px;
+  margin-left: 1180px;
+  margin-top:-65px;
+  position: absolute;
+border-style: none;
+}
+.slidcontainer2{
+        background-color:white;
+        width:1330px;
+        height:380px;
+        margin-top:2px;
+        padding-right: 15px;
+        
+    }
+    .cardimgcontainer2 {
+      display: flex;
+   /* width:100%; */
+
+    }
+    .cardimg2 img{
+      width: 90%;
+      padding-left: 40px;
+      padding-top: 20px;
+}
+ .card2:hover{
+  transform:scale(1.1);
+}
+
+.images{
+    border-radius:none !important;
+    min-width:none !important;
+    object-fit: cover;
+ }
+
+    /* .card2:hover{
+  transform:scale(1.1);
+}
+
+    .card2{
+      height:300px;
+      border-radius: 0%;
+      min-width: none !important;
+      padding: 20px 20px;
+      margin: 20px 20px;
+    }
+.cardtxt{
+  margin-top: -40px;
+
+} */
+.txt1{
+  padding-left:10px;
+  margin-top:-30px;
+  position: relative;
+ }
+ .grn1{
+    color: rgb(86, 145, 86);
+    padding-left:25px;
+ }
+ .gry1{
+    color: gray;
+    padding-left:-55px;
+    position: absolute;
+ }
+.txt2{
+  padding-left:30px;
+  margin-top:-30px;
+  position: relative;
+ }
+ .grn2{
+    color: rgb(86, 145, 86);
+    padding-left:20px;
+ }
+ .gry2{
+    color: gray;
+    padding-left:30px;
+    position: absolute;
+ }
+.txt3{
+  padding-left:25px;
+  margin-top:-1px;
+  position: absolute;
+ }
+ .grn3{
+    color: rgb(86, 145, 86);
+    padding-left:20px;
+    margin-top:45px;
+    /* position: absolute; */
+ }
+ .gry3{
+    color: gray;
+    padding-left:40px;
+    position: absolute;
+ }
+.txt4{
+  padding-left:-25px;
+  margin-top:-25px;
+  position: absolute;
+ }
+ .grn4{
+    color: rgb(86, 145, 86);
+    padding-left:20px;
+    margin-top:25px;
+    /* position: absolute; */
+ }
+ .gry4{
+    color: gray;
+    padding-left:30px;
+    position: absolute;
+ }
+ /* .container4{
+  background-color: rgb(223, 219, 219);
+ } */
+
+ .smmlpnkfooter{
+  margin-top:5px;
+  padding-top: 10px;
+  cursor: pointer;
+/* width:1000px; */
+height:200px;
+}
+.smlpnk{
+  margin-left: 18px;
+  width:23%;
+  
+}
+
+ .footer{
+  margin-top:-450px;
+  margin-left:35px;
+  margin-right:35px;
+  position: relative;
+  /* padding-left: 5px;
+  padding-right: 5px;
+   */
+   padding-top: 55px;
+  background-color: white;
+}
+.footheading{
+  font-size: 16px;
+  color: rgb(120, 116, 116);
+}
+.brand{
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.foot1{
+  font-size: 17px;
+  color: rgb(120, 116, 116);
+}
+.foot1a{
+  font-size: 14px;
+  color: rgb(105, 101, 101);
+}
+.foot2{
+  font-size: 17px;
+  color: rgb(101, 98, 98);
+  margin-top: 25px;
+  margin-left: 30px;
+  line-height:1 !important;
+}
+.foot2a{
+  font-size: 13px;
+  color: rgb(120, 116, 116);
+  line-height:1.5 !important;
+}
+.lastfooter{
+  margin-top: 30px;
+  font-size: 15px;
+  color: rgb(120, 116, 116);
+  background-color: #172337;
+  padding-top:40px;
+  padding-left:10px;
+  padding-right:50px;
+  display: flex;
+  
+}
+
+.about{
+  text-decoration: none;
+ font-size:14px;
+ margin-top: 12px;
+ margin-left: 20px;
+ list-style-type:none;
+ color: rgb(159, 154, 154);
+
+}
+.about li{
+  text-decoration: none;
+  margin-top: 10px;
+  color: white;
+}
+.phnno{
+  color:rgb(16, 113, 217);
+  cursor: pointer;
+}
+.footerend{
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 17px;
+  background-color: #172337;
+  display: flex;
+}
+ul{
+ 
+  /* margin-right: 30px; */
+  margin-top: 50px;
+  font-size: 14px;
+  color: white;
+  padding-right: 20px;
+}
+
+#icon1{
+  color: rgb(223, 195, 12);
+}
+#icon2{
+  color: rgb(223, 195, 12);
+}
+#icon3{
+  color: rgb(223, 195, 12);
+}
+#icon4{
+  color: rgb(223, 195, 12);
+}
+#visimg{
+  margin-top: 40px;
+  /* margin-left:20px; */
+  margin-right:20px;
+
+}
+.Hline{
+  width: 1350px;
+  height:1px;
+  position: absolute;
+  background-color: rgb(110, 110, 107);
+  /* left:30% */
+}
+.vline{
+  width: 1px;
+  height:150px;
+  position: absolute;
+  background-color: rgb(110, 110, 107);
+  left:52%;
+margin-top:25px;
+}
+</style>
+<body>
+<div class="maincontainer">
+    <nav class="navbar navbar-expand-lg navbar-light" id="flipplus">
+        <div><a href class="flipkart" ><i><b>Flipkart</b></i> </a></div>
+        <span><a href class="Explore"><i>Explore</i> <i><b id="plus"> Plus</b></i></a></span>
+        <i class="fa-solid fa-plus" id="pluslogo"></i>
+
+     <span class="formnav">
+     <form class="form-inline my-2 my-lg-0">
+       <input
+         class="form-control mr-sm-2"
+         type="search"
+         placeholder="Search for products,brands and more"
+         aria-label="Search"
+         id="searchtag"
+         />
+         <i class="fa-solid fa-magnifying-glass fa-lg" id="search"></i>
+     </form>
+   </span>
+
+     <div class="login">
+     <button class="btnlogin" type="submit">
+       <b>Login</b>
+     </button></div>
+  
+     <button
+       class="navbar-toggler"
+       type="button"
+       data-toggle="collapse"
+       data-target="#navbarSupportedContent"
+       aria-controls="navbarSupportedContent"
+       aria-expanded="false"
+       aria-label="Toggle navigation"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="#" id="seller"
+             ><b>Become a Seller</b> <span class="sr-only">(current)</span></a>
+         </li>
+
+         <li class="nav-item dropdown" >
+           <a
+             class="nav-link dropdown-toggle"
+             href="#"
+             role="button"
+             data-toggle="dropdown"
+             aria-expanded="false"
+             id="more"
+           >
+           <b>More</b>
+           </a>
+           <div class="dropdown-menu" id="moreinfo">
+             <a class="dropdown-item" href="#"><i class="fa-solid fa-bell"></i>   Notification Preferances</a>
+             <a class="dropdown-item" href="#"><i class="fa-duotone fa-question"></i> 24x7 customer care</a>
+             <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-trend-up"></i>  Advertise</a>
+             <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-down-to-line"></i>  Download app</a>
+           </div>
+         </li>
+           <a class="nav-link" href="#" id="cart"><i class="fa-solid fa-cart-shopping"></i> <b>Cart</b></a>
+       </ul>
+     </div>
+   </nav>
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+<!-- for 2nd div -->
+<div class="topimgcontainer">
+
+  
+    <div class="imgdiv">
+      <img src="IMAGES/TOPOFFER.JPG"><br>
+      <span class="imgtext"><b>Top Offers</b></span>
+    </div>
+    <div class="imgdiv">
+      <img src="IMAGES/GROCERY.JPG"><br>
+      <span class="imgtext"><b>Grocery</b></span>
+    </div>
+    <div class="imgdiv">
+      <img src="IMAGES/MOB.JPG"><br>
+      <span class="imgtext"><b>Mobiles</b></span>
+    </div>
+    <div class="imgdiv4">
+      <img src="IMAGES/FASHION.JPG"><br>
+      <span class="imgtext" id="fashion"><b>Fashion</b></span>
+    </div>
+    <div class="imgdiv5">
+      <img src="IMAGES/ELECT.JPG"><br>
+      <span class="imgtext" id="Electronics"><b>Electronics</b></span>
+    </div>
+    <div class="imgdiv6">
+      <img src="IMAGES/HOME.JPG"><br>
+      <span class="imgtext" id="home"><b>Home</b></span>
+    </div>
+    <div class="imgdiv7">
+      <img src="IMAGES/APPLI.JPG"><br>
+      <span class="imgtext"><b>Appliance</b></span>
+    </div>
+    <div class="imgdiv8">
+      <img src="IMAGES/TRAVEL.JPG" ><br>
+      <span class="imgtext" id="travel"><b>Travel</b></span>
+    </div>
+    
+    <div class="imgdiv9" id="teddy">
+      <img src="IMAGES/BEAUTY.JPG" ><br>
+      <span class="imgtext" id="beauty"><b>Beauty,Toys&More</b></span>
+    </div>
+</div>
+ <!-- for 3rd div -->
+ <div class="slidimg">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="IMAGES/slid1.JPG" class="d-block w-100" alt="..." >
+        </div>
+        <div class="carousel-item">
+          <img src="IMAGES/add.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="IMAGES/MOTRO_SLIDE.JPG" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+        <div class="previousbtn">
+
+          <span class="carousel-control-prev-icon" aria-hidden="true" id="prebtn"></span>
+        </div>
+          <span class="sr-only">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+     <div class="nextbtn">
+
+       <span class="carousel-control-next-icon" aria-hidden="true" id="nextbtn"></span>
+     </div>
+        <span class="sr-only">Next</span>
+      </button>
+
+        <!-- <button type="click" class="leftbtn"> </button>
+        <button type="click" class="rytbtn"> </button> -->
+    </div>
+    <div class="bestelectronic">
+        <h3 class="eleheading">Best of Electronics</h3>
+        <h5 class="elesubheading">Best of Electronics</h5>
+        <button type="submit" class="btn">VIEW ALL</button>
+    </div>
+    <div class="slidcontainer">
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide"
+          data-touch="false"
+          data-interval="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="imgcontainer">
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img src="IMAGES/camera1.JPG" class="images" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      <h5 class="img1">Top mirrorless camera</h5>
+                      <h5 class="green1">Shop Now!</h5>
+                      <h5 class="gray1">Cannon Camera</h5>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img src="IMAGES/lappy1.JPG" class="images" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      <h5 class="img2">Core i3 Laptops</h5>
+                      <h5 class="green2">From ₹29,990</h5>
+                      <h5 class="gray2">Windows|Performance</h5>
+
+                    </p>
+                  </div>
+                </div>
+               
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img
+                      src="IMAGES/printer1.JPG"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        <h5 class="img3">Printers</h5>
+                        <h5 class="green3">From$10999</h5>
+                        <h5 class="gray3">Epson</h5>
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img src="IMAGES/tv.JPG" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        <h5 class="img4">Monitors</h5>
+                        <h5 class="green4">From$9990</h5>
+                        <h5 class="gray4">SAMSUNG</h5>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="imgcontainer">
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img
+                      src="IMAGES/PROJECTOR.JPG"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        <h5 class="img5">Projectors</h5>
+                        <h5 class="green5">From$10999</h5>
+                        <h5 class="gray5">ZEBRONICS</h5>
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img src="IMAGES/corei3.JPG" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body"> 
+                    <p class="card-text">
+                      <h5 class="img2">Core i3 Laptops</h5>
+                      <h5 class="green2">From ₹29,990</h5>
+                      <h5 class="gray2">Windows|Performance</h5>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img src="IMAGES/tv.JPG" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      <h5 class="img4">Monitors</h5>
+                      <h5 class="green4">From$9990</h5>
+                      <h5 class="gray4">SAMSUNG</h5>
+                  </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="cardimg">
+                    <img
+                      src="IMAGES/premlappy.JPG"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                        <h5 class="img6">Premium Laptops</h5>
+                        <h5 class="green6">From$45,990</h5>
+                        <h5 class="gray6">HP Pavillion|Asus Oled</h5>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-target="#carouselExampleControlsNoTouching"
+            data-slide="prev"
+          >
+          <div class="cardbtn1">
+
+              <span class="carousel-control-prev-icon" aria-hidden="true" id="cardlbtn"></span>
+          </div>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-target="#carouselExampleControlsNoTouching"
+            data-slide="next"
+          >
+          <div class="cardbtn1">
+  
+              <span class="carousel-control-next-icon" aria-hidden="true" id="cardrbtn"></span>
+          </div>
+            <span class="sr-only">Next</span>
+          
+          </button>
+  
+        </div>
+      </div>
+      
+      <!-- furniture code start -->
+    <span class="furniture">
+        <img src="IMAGES/furniture.JPG" class="furnitureimg">
+    </span>
+    <div class="toyitem">
+        <h3 class="toyheading">Beauty, Food, Toys & more</h3>
+        <h5 class="toysubheading">Beauty, Food, Toys & more</h5>
+        <button type="submit" class="toybtn">VIEW ALL</button>
+    </div>
+    <div class="slidcontainer2" >
+        
+      <div id="carouselExampleControlsNoTouching1" class="carousel slide" data-touch="false" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cardimgcontainer2">
+              <div class="card2" style="width: 18rem;">
+                <div class="cardimg2">
+
+                  <img src="IMAGES/babypilow.JPG" class="card-img-top" alt="..." height="200px">
+                </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="txt1">Baby Bedding</h5>
+      <h5 class="grn1">Mini 50% off</h5>
+      <h5 class="gry1">Baby Pillows, Mat</h5>
+    </p>
+  </div>
+</div>
+              <div class="card2" style="width: 18rem;">
+                <div class="cardimg2">
+
+                  <img src="IMAGES/PENSTAND.JPG" class="card-img-top" alt="...">
+                </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="txt2">Pen Stand</h5>
+      <h5 class="grn2">Mini 50% off</h5>
+      <h5 class="gry2">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+              <div class="card2" style="width: 18rem;">
+                <div class="cardimg2">
+
+                  <img src="IMAGES/styling.JPG" class="card-img-top" alt="...">
+                </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="txt3">Straightner</h5>
+      <h5 class="grn3">Mini 50% off</h5>
+      <h5 class="gry3">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+              <div class="card2" style="width: 18rem;">
+                <div class="cardimg2">
+
+                  <img src="IMAGES/music.JPG" class="card-img-top" alt="...">
+                </div>      
+  <div class="card-body">
+    <p class="card-text"><h5 class="txt4">Musical Instrument</h5>
+      <h5 class="grn4">Mini 50% off</h5>
+      <h5 class="gry4">Buy Now!</h5></p>
+  </div>
+</div>
+              <div class="card2" style="width: 18rem;">
+                <div class="cardimg2">
+                  <img src="IMAGES/musquitonet.JPG" class="card-img-top" alt="...">
+                </div>      
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="txt4">Mosquito Nets</h5>
+      <h5 class="grn4">From 149/-</h5>
+      <h5 class="gry4">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cardimgcontainer2">
+              <div class="card2" style="width: 18rem;">
+                <div class="cardimg2">
+                  
+                  <img src="IMAGES/TOY.JPG" class="card-img" alt="...">
+                </div>
+
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="cardtxt">Soft Toy</h5>
+      <h5 class="green">Upto 70% off</h5>
+      <h5 class="gray">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+<div class="card2" style="width: 18rem;">
+  <div class="cardimg2">
+                  
+    <img src="IMAGES/CYCLE.JPG" class="card-img" alt="...">
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="txt7">Premium Non-Geared Cycles</h5>
+      <h5 class="grn7">Upto 40% off</h5>
+      <h5 class="gry7">Buy Now!</h5>
+      
+    </p>
+  </div>
+</div>
+<div class="card2" style="width: 18rem;">
+  <div class="cardimg2">
+                  
+    <img src="IMAGES/matt.JPG" class="card-img" alt="...">
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="cardtxt">Yoga Mat</h5>
+      <h5 class="green">From 120/-</h5>
+      <h5 class="gray">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+<div class="card2" style="width: 18rem;">
+  <div class="cardimg2">
+                  
+    <img src="IMAGES/colgate.JPG" class="card-img" alt="...">
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="cardtxt">Colgate</h5>
+      <h5 class="green">Off 180/-</h5>
+      <h5 class="gray">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+<div class="card2" style="width: 18rem;">
+  <div class="cardimg2">
+                  
+    <img src="IMAGES/ACER.JPG" class="card-img-top" alt="...">
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <h5 class="cardtxt">Laptops</h5>
+      <h5 class="green">From 49000/-</h5>
+      <h5 class="gray">Buy Now!</h5>
+    </p>
+  </div>
+</div>
+            </div>
+          </div>
+       
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching1" data-slide="prev">
+          <div class="cardbtn1">
+  
+            <span class="carousel-control-prev-icon" aria-hidden="true" id="prebtn"></span>
+          </div>
+            <span class="sr-only">Previous</span>
+          </button>
+  
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching1" data-slide="next">
+       <div class="cardbtn1">
+  
+         <span class="carousel-control-next-icon" aria-hidden="true" id="nextbtn1"></span>
+       </div>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+      </div>
+
+      <div class="smmlpnkfooter">
+
+        <img src="IMAGES/599.JPG" class="smlpnk">
+        <img src="IMAGES/699.JPG" class="smlpnk">
+        <img src="IMAGES/299.JPG" class="smlpnk">
+        <img src="IMAGES/799.JPG" class="smlpnk">
+  
+        <img src="IMAGES/fpink1.JPG" class="smlpnk">
+        <img src="IMAGES/fpink2.JPG" class="smlpnk">
+        <img src="IMAGES/fpink3.JPG" class="smlpnk">
+        <img src="IMAGES/fpink2.JPG" class="smlpnk">
+        
+  
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    
+
+  <div class="container4">
+    <div class="footer">
+      <span class="footheading">Top Stories:</span>
+        <span class="brand">Brand Directory</span>
+      <br><br>
+             <span class="foot1">MOST SEARCHED FOR ON FLIPKART:</span>
+              <span class="foot1a"> Bounce Infinity E1 | Google Pixel 6A | vivo T1X | OPPO Reno8 5G|OPPO Reno8 Pro 5G | Nothing Phone 1| Sell Old Mobile Phones| ASUS TUF Gaming F15 Core i5 10th Gen| Electronics StoreOPPO A16KVivo Y33TOPPO Reno7 5GBathroom Exhaust FanSamsung Window AC|OPPO Reno7 Pro 5G|iPhone 13|iPhone 13 Pro|iPhone 13 Pro Max|iPhone 13 Mini|Google Pixel 6a covers|Flipkart QuickBooks|Flipkart Help CentreOnline Boat StoreFlipkart Track OrdersFlipkart Manage Orders|Flipkart Return Orders|Flipkart Gift Cards Store|Flipkart Axis Bank Credit Card|Flipkart Pay Later</span>
+            <br>
+              <span class="foot1">MOBILES:</span>
+              <span class="foot1a"> iPhone 12 64GB |iPhone 12 Pro 512GB | iPhone 12 128GB | Vivo Y91iVivo Y11 | Vivo Y15| Vivo Y50 | Vivo Y12| Reno2 FOppo A12 |Oppo F15Oppo A31 | Samsung A71 | Samsung A51|Samsung A31 | Realme X2 | iPhone 11 | iPhone 11 Pro|iPhone 11 Pro Max|Mobile Offers|iphone x4G Mobile|Nokia MobileSamsung MobileiphoneOppo MobileVivo Mobile</span>
+            <br>
+              <span class="foot1"> CAMERA:</span>
+              <span class="foot1a">GoPro Action Camera| Nikon Camera | Canon Camera | Sony Camera |Canon DSLRNikon DSLR</span>
+  
+            <br>
+              <span class="foot1">LAPTOPS:</span>
+              <span class="foot1a">MacBook Pro M2 | acer Ryzen 3 Dual Core 3250U - (8 GB/256 GB SSD/Windows 11 Home) Z2-493 Thin and Light Laptop | ASUS Vivobook S14 OLED (2022)ASUS Zenbook 14 OLED (2022)Realme Book Prime Core i5 11th Gen | Microsoft Surface Go Pentium 128GB | Branded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsLaptops | Dell latest laptops 2022| HP latest laptops 2022Infinix IN| Book X1 Neo Series Celeron Quad Core - (8 GB/256 GB SSD/Windows 11 Home) XL22 Thin and Light Laptop | Microsoft Laptops</span>
+            <br>
+              <span class="foot1">CLOTHING:</span>
+              <span class="foot1a">Men Shirts | Kurta Pajama|KurtasMen T-Shirts|JeansSaree|DressesKids Dresses|Designer Salwar SuitsBraDesigner KurtisTrack PantMen KurtasGym WearParty DressesPalazzo SuitsBoys ClothingGlovesNightyMaxi DressesAnarkaliGownsCulottesSalwar SuitsKurtisDesigner SareesLeggingsShortsGeorgette SareesEthnic WearBriefs & TrunksNike WatchesAscot TieCorset Tops TunicsLeather PU SkirtsCorset tops camisolesWomen magenta earringsNo collar jacketsGreen dress materialBlack patiala kurta setMen camel shoes casualBlack pathaniWallets sling|Khaki dresses|Kids formal dresse|Mauve shirtsWomen henley |Indigo trousersLeopard dresses|Sleeveless shrugs</span>
+            <br>
+              <span class="foot1">BGMH:</span>
+              <span class="foot1a">Whey Protein|Homeopathy | Bounce Infinity | Toys | RusOnline Guitar | Books Store|Musical Instrument StoreEnergy Drinks|ToysMilk Drink Mixes|RakhiIndian Flag}Protein Supplements</span>
+    </div>
+    <div class="foot2"><b>Flipkart: The One-stop Shopping Destination</b>
+      <br><br>
+      <span class="foot2a">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+  <br><br>
+        What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</span>
+      </span>
+      </div>
+    <div class="foot2"><b>Flipkart Plus</b>
+      <br><br>
+      <span class="foot2a">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!
+      <br> <br>
+        What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>
+        An annual Zomato Gold membership<br>
+        An annual Hotstar Premium membership<br>
+        6 months Gaana plus subscription<br>
+        Rupees 550 instant discount on flights on ixigo<br>
+        Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</span>
+      </span>
+      </div>
+    <div class="foot2"><b>Books, Sports and Games</b>
+      <br><br>
+      <span class="foot2a">Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a 
+        <br>tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</span>
+      </span>
+      </div>
+    <div class="foot2"><b>Grocery/Supermart</b>
+      <br><br>
+      <span class="foot2a">Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks,
+        <br> spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products 
+        <br>every day for a nominal price of 1 Rupee only. Terms and conditions apply.</span>
+      </div>
+  <div class="lastfooter">
+  <ul class="about"> ABOUT
+    <li>Contact us</li>
+    <li>About us</li>
+    <li>Creers</li>
+    <li>Flipkart Stories</li>
+    <li>Press</li>
+    <li>Flipkart Wholesale</li>
+    <li>Corporate</li>
+  </ul>
+  <ul class="about"> HELP
+    <li>Payments</li>
+    <li>Shipping</li>
+    <li>Cancellation &</li>
+    <li>Returns</li>
+    <li>FAQ</li>
+    <li>Report Infrastrcation</li>
+  </ul>
+  <ul class="about"> POLICY
+    <li>Return Policy</li>
+    <li>Terms of use</li>
+    <li>Security</li>
+    <li>Privacy</li>
+    <li>Sitmap</li>
+    <li>EPR Compilance</li>
+  </ul>
+  <ul class="about"> SOCIAL
+    <li>Facebook</li>
+    <li>Twitter</li>
+    <li>You Tube</li> 
+  </ul>
+  <div class="vline"></div>
+  <ul class="about"> Mail us:
+    <li>Flipkart Internet Private Limited,<br>
+      Buildings Alyssa, Begonia &<br>
+      Clove Embassy Tech Village,<br>
+      Outer Ring Road, Devarabeesanahalli Village,<br>
+      Bengaluru, 560103,<br>
+      Karnataka, India</li> 
+  </ul>
+  <ul class="about">Registered Office Address:
+    <li>Flipkart Internet Private Limited,<br>
+      Buildings Alyssa, Begonia &<br>
+      Clove Embassy Tech Village,<br>
+      Outer Ring Road, Devarabeesanahalli Village,<br>
+      Bengaluru, 560103,<br>
+      Karnataka, India<br>
+      CIN : U51109KA2012PTC066107<br>
+      Telephone: 
+      <span class="phnno">044-45614700</span>
+    </li> 
+  </ul>
+  </div>
+  <div class="footerend">
+  <div class="Hline"></div>
+  <ul class="ul"><i class="fa-solid fa-briefcase" id="icon1"></i> Become a seller</ul>
+  <ul class="ul"><i class="fa-solid fa-star" id="icon2"></i> Advertise</ul>
+  <ul class="ul"><i class="fa-solid fa-gift" id="icon3"></i> Gift Cards</ul>
+  <ul class="ul"><i class="fa-solid fa-circle-question" id="icon4"></i> Help Center</ul>
+  <ul class="ul">© 2007-2022 Flipkart.com</ul>
+  <img src="IMAGES/visa.JPG" width="500px" height="40px" id="visimg">
+  </div>
+  </div>
+  </div>
+    
+  </div> <!-- this div for sliding image -->
+ 
+
+</div> <!-- this div for maincontainer -->
+</body>
+</html>
